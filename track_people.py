@@ -64,7 +64,7 @@ while True:
     ##### drawing line
     x,y = new_pts[0,:,:].ravel()
     a,b = new_pts[1,:,:].ravel()
-    cv2.line(new_inp_img, (x,y), (a,b), (0,0,255), 15)
+    cv2.line(new_inp_img, (int(x),int(y)), (int(a),int(b)), (0,0,255), 15)
     
 
     cv2.imshow("ouput", new_inp_img)
